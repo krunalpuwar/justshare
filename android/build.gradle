@@ -1,0 +1,45 @@
+buildscript {
+    ext {
+        googlePlayServicesVersion = "+"
+    firebaseMessagingVersion = "+"
+
+        buildToolsVersion = "31.0.0"
+        minSdkVersion = 21
+        compileSdkVersion = 31
+        targetSdkVersion = 30
+
+        if (System.properties['os.arch'] == "aarch64") {
+            ndkVersion = "24.0.8215888"
+        } else {
+            ndkVersion = "21.4.7075529"
+        }
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:7.2.1")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("de.undercouch:gradle-download-task:5.0.1")
+        classpath("com.google.gms:google-services:4.3.13")
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url("$rootDir/../node_modules/react-native/android")
+        }
+        maven {
+            url("$rootDir/../node_modules/jsc-android/dist")
+        }
+        mavenCentral {
+            content {
+                excludeGroup "com.facebook.react"
+            }
+        }
+        google()
+        maven { url 'https://www.jitpack.io' }
+    }
+}

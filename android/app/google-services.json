@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "582064649833",
+    "project_id": "justshare-c1a62",
+    "storage_bucket": "justshare-c1a62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582064649833:android:c8141d9bca9416264c14f8",
+        "android_client_info": {
+          "package_name": "com.justshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582064649833-vru7n6r4tnbd5qcu0ajcadpsu4otnpp0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2VFxy8eA33IsfnUsOCxtrG-fQu_ls81U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582064649833-vru7n6r4tnbd5qcu0ajcadpsu4otnpp0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
